@@ -1,1 +1,2 @@
-﻿# Hasar Takip Is Emirlerim tablo tasarımı.
+# Hasar Takip iş Emirlerim Tablosu
+

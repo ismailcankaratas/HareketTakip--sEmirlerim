@@ -8,10 +8,6 @@
 body {
     background-color: #f8f9fa;
 }
-:root{
-    --th: #6c757d;
-    --border: #e9ecef;
-}
 .tableContainer {
     margin: 1rem;
     padding: 1rem;
@@ -39,21 +35,21 @@ body {
     width: 100%;
     border: none;
     margin-top: 1rem;
-    border-radius: .5rem;
+    border-radius: .4rem;
     color: #fff;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.5;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     text-align: center;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
 }
  button + button + button{
     margin-bottom: 1rem;
 }
 .success {
-    background-color:  #198754;
+    background-color:  #0dcaf0;
 }
 .warning {
     background-color:  #ffc107;
@@ -62,12 +58,43 @@ body {
     background-color:  #dc3545;
 } 
 
+
 .dataTables_length , .dataTables_filter{
     padding: 1rem 0;
 }
 .dataTables_filter input {
     border-radius: 5rem !important;
     padding-left: .5rem !important; 
+}
+
+.working {
+    background-color: #272a49!important;
+    color: #fff;
+}
+.working .statu {
+    background-color: #8088d5;
+}
+.statu {
+    border-radius: .4rem;
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1;
+    padding: .4rem .7rem;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+.set {
+    background-color: #8088d5!important;
+    color: #fff;
+}
+.set .statu {
+    background-color: #272a49;
+}
+.sorting_1 {
+    background-color: #6c757d!important;
 }
 
 /* .tableContainertabletable thead tr {

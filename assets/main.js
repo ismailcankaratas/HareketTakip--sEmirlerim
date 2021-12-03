@@ -50,7 +50,7 @@ for (index = 0; index < 150; index++) {
             </tr>
         `);
     }else {
-        $(".for").append(`
+        $(".for").append(` 
         <tr class="set">
                 <td>`+index+`</td>
                 <td>0</td>

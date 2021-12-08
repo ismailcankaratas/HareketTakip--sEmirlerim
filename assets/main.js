@@ -14,7 +14,7 @@ let data = fetch("")
 })
 
 // Veri Yazdırma
-// $(".for").html("");
+$(".for").html("");
 for (index = 0; index < 150; index++) {
     var mod = index % 2;
     if (  mod == 0 ) {

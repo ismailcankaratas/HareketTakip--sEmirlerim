@@ -36,7 +36,7 @@ for (index = 0; index < 150; index++) {
         <div class="buttons">
             <button class="success">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-skip-start-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM9.71 5.093 7 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407v-5a.5.5 0 0 0-.79-.407z"/>
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
             </svg>
             Start
         </button>
@@ -62,7 +62,7 @@ for (index = 0; index < 150; index++) {
         <td>`+index+`</td>
         <td>0</td>
         <td>3.12.2021 01:18</td>
-        <td><span class="statu">Tamamlandı</span></td>
+        <td><span class="statu">Atandı</span></td>
         <td>
             <div class="description">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-box-arrow-up-left" viewBox="0 0 16 16">
@@ -75,7 +75,7 @@ for (index = 0; index < 150; index++) {
         <div class="buttons">
             <button class="success">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-skip-start-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM9.71 5.093 7 7.028V5.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0V8.972l2.71 1.935a.5.5 0 0 0 .79-.407v-5a.5.5 0 0 0-.79-.407z"/>
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
             </svg>
             Start
         </button>

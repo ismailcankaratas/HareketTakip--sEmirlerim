@@ -14,7 +14,7 @@ let data = fetch("")
 })
 
 // Veri Yazdırma
-$(".for").html("");
+// $(".for").html("");
 for (index = 0; index < 150; index++) {
     var mod = index % 2;
     if (  mod == 0 ) {
@@ -114,19 +114,26 @@ for (index = 0; index < 150; index++) {
 // POP-UP
 
 $(".description svg").click(function() {
-    $(".pop-up-wrapper ").css("display", "block");
+    $("#description-popup").css("display", "block");
 })
-$(".pop-up .close").click(function() {
-    $(".pop-up-wrapper ").css("display", "none");
+$(".close").click(function() {
+    $(".pop-up-wrapper").css("display", "none");
+})
+$("#other-startbtn").click(function() {
+    $("#other-popup").css("display", "block");
 })
 
+// ATANDI - ÇALIŞIYOR
 $(".for .Atandı").parent().parent().addClass("set");
 $(".for .Çalışıyor").parent().parent().addClass("working");
 
-
-// TODOLİST
-
-// DESTEĞİ KAPAT
-// DİĞER BUTONU - POPUP AÇILICAK BASILINCA NOT EKLENİCEK
-// SAYFA BOYDAN İNCELİCEK
-// TAMAMLANDI EKLENİCEK FARKLI RENK
+// Destek İste
+$(".support").click(function() {
+    $(this).html(`
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-stop-circle-fill" viewBox="0 0 16 16">
+    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+    </svg>
+    Destek Kapa
+    `);
+    $(this).css("background-color", "#023953");
+})

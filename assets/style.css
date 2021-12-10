@@ -212,32 +212,85 @@ thead {
     cursor: pointer;
     color: var(--red);
 }
-.pop-up p input {
-    width: 100%;
+#other-popup p {
     display: flex;
-    font-size: 1.3rem;
+    flex-direction: column;
+}
+#other-popup p input {
+    font-size: 2rem;
     color: var(--white);
     padding: 1rem;
     border-radius: .3rem;
     background-color: var(--bg);
 }
+#other-popup p button {
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--bg);
+    border: none;
+    color: var(--white);
+    border-radius: .3rem;
+    cursor: pointer;
+}
+#other-popup p button:hover {
+    background-color: var(--border-color);
+}
 .description svg {
     cursor: pointer;
 }
-
 .work-done {
     background-color: var(--bg);
     border: 3px solid var(--light-blue);
+}
+.work-done td {
+    padding: 1rem;
+}
+.aktif-is {
+    width: 100%;
+    top: 0; 
+    z-index: 1;
+    border: none;
+    background: linear-gradient(45deg, #03a9f4, #238636, #23a6d5, #238636);
+	background-size: 500% 500%;
+	animation: animeBG 15s ease infinite;
+	animation-direction: alternate;
+}
+@keyframes animeBG {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+.aktif-is td{
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.aktif-is td .buttons button {
+    padding: 2rem;
+}
+
+.aktif-is td + td + td + td + td + td {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 /* PROGRESS */
 .job-progress {
     display: flex;
+    margin: 1rem;
+
 }
 .progress {
     flex: 1;
     margin: 1rem;
+    padding: 2rem 1rem;
+    border: .4rem double var(--light-blue);
+    /* border: .4rem dotted var(--light-blue);
+    border: .4rem dashed var(--light-blue); */
+    border-radius: 1rem;
 }
+
 .progress .progress-count {
     font-size: 3rem;
     padding-left: .5rem;

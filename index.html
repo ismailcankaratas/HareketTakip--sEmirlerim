@@ -22,56 +22,8 @@
                 </button>
             </div>
         </div>
-        <div class="job-progress">
-            <div class="progress">
-                <div class="progress-count">
-                    20
-                </div>
-                <div class="progress-title">
-                    Beklenen İş
-                </div>
-                <div class="progress-wrapper" style="--percent:95%">
-                    <div class="progress-value"></div>
-                </div>
-                <div class="progress-info">
-                    <div class="percent">95%</div>
-                    <div class="count">30</div>
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-count">
-                    15
-                </div>
-                <div class="progress-title">
-                    Çalışılan İş
-                </div>
-                <div class="progress-wrapper" style="--percent:50%">
-                    <div class="progress-value"></div>
-                </div>
-                <div class="progress-info">
-                    <div class="percent">50%</div>
-                    <div class="count">30</div>
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-count">
-                    1
-                </div>
-                <div class="progress-title">
-                    Tamamlanan İş
-                </div>
-                <div class="progress-wrapper" style="--percent:10%">
-                    <div class="progress-value"></div>
-                </div>
-                <div class="progress-info">
-                    <div class="percent">10%</div>
-                    <div class="count">7</div>
-                </div>
-            </div>
-
-        </div>
         <table>
-            <tr class="work-done">
+            <tr class="work-done aktif-is">
                 <td>Aktif İş</td>
                 <td>0</td>
                 <td>3.12.2021 01:18</td>
@@ -86,12 +38,6 @@
                 </td>
                 <td>
                 <div class="buttons">
-                    <button class="success">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-skip-start-circle-fill" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
-                    </svg>
-                    Başla
-                </button>
                 <button class="warning">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"" fill="currentColor" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z"/>
@@ -113,6 +59,56 @@
                 </div>
                 </td>
             </tr>
+        </table>
+        <div class="job-progress">
+            <div class="progress">
+                <div class="progress-count">
+                    20
+                </div>
+                <div class="progress-title">
+                    Beklenen İş
+                </div>
+                <div class="progress-wrapper" id="beklenenIs">
+                    <div class="progress-value"></div>
+                </div>
+                <div class="progress-info">
+                    <div class="percent">95%</div>
+                    <div class="count">30</div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-count">
+                    15
+                </div>
+                <div class="progress-title">
+                    Çalışılan İş
+                </div>
+                <div class="progress-wrapper" id="calisilanIs">
+                    <div class="progress-value"></div>
+                </div>
+                <div class="progress-info">
+                    <div class="percent">50%</div>
+                    <div class="count">30</div>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-count">
+                    1
+                </div>
+                <div class="progress-title">
+                    Tamamlanan İş
+                </div>
+                <div class="progress-wrapper" id="tamamlananIs">
+                    <div class="progress-value"></div>
+                </div>
+                <div class="progress-info">
+                    <div class="percent">10%</div>
+                    <div class="count">7</div>
+                </div>
+            </div>
+
+        </div>
+        <table>
             <tr class="work-done">
                 <td>Diğer İş </td>
                 <td>0</td>
@@ -133,12 +129,6 @@
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
                     </svg>
                     Başla
-                </button>
-                <button class="warning">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"" fill="currentColor" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z"/>
-                    </svg>
-                    Durdur
                 </button>
                 <button class="danger">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-stop-circle-fill" viewBox="0 0 16 16">
@@ -211,6 +201,7 @@
             <h1>Diğer İş</h1>
             <p>
                 <input type="text" placeholder="Açıklama giriniz...">
+                <button type="submit">Gönder</button>
             </p>    
         </div>
     </div>
